@@ -6,10 +6,11 @@ import { ProjectDetailComponent } from './project-detail/project-detail.componen
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/homepage', pathMatch: 'full' },
+  { path: '', component: HomepageComponent },
   { path: 'homepage', component: HomepageComponent },
   { path: 'projects', component: ProjectsComponent },
-  { path: 'detail/:id', component: ProjectDetailComponent }
+  { path: 'detail/:id', component: ProjectDetailComponent },
+  { path: 'assets/Resume_2019_Protected.pdf', redirectTo: '../assets/Resume_2019_Protected.pdf', pathMatch: 'full' }
 ];
 
 @NgModule({

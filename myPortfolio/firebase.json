@@ -1,10 +1,10 @@
 {
   "hosting": {
-    "public": "dist",
+    "public": "dist/myPortfolio",
     "rewrites": [
     {  
       "source": "**",  
       "destination": "/index.html"  
-    } ]
+    }]
   }
 }
