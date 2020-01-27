@@ -1,0 +1,40 @@
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<body>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+    <div class="row">
+        <div *ngFor="let project of projects" style="padding: 2%;">
+            <div class="flip-card" style="padding: 2%;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3 style="color: white;">{{project.name}}</h3>
+                        <div class="polaroid">
+                            <img src={{project.imgsrc}} alt="Avatar" style="width:200px;height:160px;">
+                        </div>
+                        <h5 style="color: white;">Status: {{project.status}}</h5>
+
+
+                    </div>
+                    <div class="flip-card-back">
+                        <a routerLink="/detail/{{project.id}}" ><button class="button-left">Detail</button></a>
+                        <a href="{{project.source}}" target="_blank"><button class="button-right">Source</button></a>
+                        <br>
+                        <br>
+                        <br>
+                        <hr>
+                        <p style="color: #0088a9;">{{project.date}}</p>
+                        <hr>
+                        <p style="color: white;">{{project.intro}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+
