@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'homepage', component: HomepageComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'detail/:id', component: ProjectDetailComponent },
-  { path: 'assets/Resume_2019_Protected.pdf', redirectTo: '../assets/Resume_2019_Protected.pdf', pathMatch: 'full' }
+  { path: 'assets/Resume_2020_Protected.pdf', redirectTo: '../assets/Resume_2020_Protected.pdf', pathMatch: 'full' }
 ];
 
 @NgModule({
