@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
+import { Contact } from './contact';
+import { ContactComponent } from './contact/contact.component';
 
 
 const routes: Routes = [
@@ -10,6 +12,7 @@ const routes: Routes = [
   { path: 'homepage', component: HomepageComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'detail/:id', component: ProjectDetailComponent },
+  { path: 'contact', component: ContactComponent },
   { path: 'assets/Resume_2020_Protected.pdf', redirectTo: '../assets/Resume_2020_Protected.pdf', pathMatch: 'full' }
 ];
 
