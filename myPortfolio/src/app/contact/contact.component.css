@@ -7,9 +7,34 @@ body {
     background-color: rgb(235, 230, 230);
     padding: 2%;
     border-radius: 50px;
+    color: white;
+    
+}
+.card, .m-3 {
+    background-color: #24252A;
+    /* align-items: center; */
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0, 126, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
     
 }
 
-.invalid-feedback {
+button:hover {
+    background-color: rgba(0, 126, 169, 0.8);
+}
+
+
+
+/* .invalid-feedback {
     color: red;
 }
+
+.card-header {
+    font-size: large;
+} */

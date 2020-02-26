@@ -16,6 +16,7 @@ export class ContactComponent implements OnInit {
 
   contact: Contact = new Contact();
   submitted = false;
+  error =  false;
 
   constructor(private contactService: ContactService, private formBuilder: FormBuilder) { }
 
@@ -36,20 +37,32 @@ export class ContactComponent implements OnInit {
   }
 
   save() {
-    this.contactService.createContact(this.contact);
-    this.contact = new Contact();
+    if (this.contact.name != '' && this.contact.email != '' && this.contact.phone != null)
+    {
+      this.contactService.createContact(this.contact);
+      this.contact = new Contact();
+    }
   }
 
   onSubmit() {
-    this.submitted = true;
-    this.save();
+    
+    
 
-    alert('SUCCESS! \n\n' + JSON.stringify(this.contactForm.value, null, 4));
+    if (this.contact.name != '' && this.contact.email != '' && this.contact.phone != null)
+    {
+      this.submitted = true;
+      this.save();
+      alert('SUCCESS! \n\n' + JSON.stringify(this.contactForm.value, null, 4));
+    } else {
+      this.error = true;
+    }
+    
   }
 
   onReset() {
     this.submitted = false;
     this.contactForm.reset();
+    this.error = false;
   }
 
 }
