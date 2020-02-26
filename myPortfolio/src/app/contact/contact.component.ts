@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 import { Contact } from '../contact';
 import { ContactService } from '../contact.service';
@@ -10,14 +11,24 @@ import { ContactService } from '../contact.service';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  contactForm: FormGroup;
+  
 
   contact: Contact = new Contact();
   submitted = false;
 
-  constructor(private contactService: ContactService) { }
+  constructor(private contactService: ContactService, private formBuilder: FormBuilder) { }
 
   ngOnInit() {
+    this.contactForm = this.formBuilder.group({
+      name: ['', Validators.required],
+      phone: ['', Validators.required],
+      email: ['', Validators.required],
+      message: ['']
+    });
   }
+
+  get f() { return this.contactForm.controls; }
 
   newContact(): void {
     this.submitted = false;
@@ -32,6 +43,13 @@ export class ContactComponent implements OnInit {
   onSubmit() {
     this.submitted = true;
     this.save();
+
+    alert('SUCCESS! \n\n' + JSON.stringify(this.contactForm.value, null, 4));
+  }
+
+  onReset() {
+    this.submitted = false;
+    this.contactForm.reset();
   }
 
 }
