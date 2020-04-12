@@ -25,7 +25,7 @@ button {
     padding: 0;
     font-family: Rockwell, Arial, Helvetica, sans-serif;
       background-color: rgb(98, 109, 109);
-      background-image: url("assets/background_image.jpg");
+      /* background-image: url("assets/background.jpg"); */
       background-repeat: no-repeat;
       background-size: 100%;
       background-attachment: fixed;
