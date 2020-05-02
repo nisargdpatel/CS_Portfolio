@@ -186,5 +186,40 @@ export const PROJECTS: Project[] = [
         imgsrc: "assets/uml_modeling.png",
         source: "https://bitbucket.org/nisargp1999/uml-modeling/src/master/",
         images: String[0] = []
+    },
+    {
+        id: 17,
+        name: "AI Search Algorithms",
+        intro: "Implementation of Depth First Search and A* Search algorithms for pathfinding in a Maze problem",
+        description: "This program simulates a maze where a robot is trying to reach a goal state. Considering a windy situation where there is a cost for moving in any specific direction. In this case, cost is 1 for moving northward, 2 for moving westward or eastward, and 3 for moving southward. Depth-First Search is implemented by storing the explored set of locations and performing operations on stack variables to be able to track next possible square to open. A* Search is implemented by using a heuristic function that tells the robot the total possible cost from starting position to the goal state. Using this knowledge, the robot follows the lowest cost path to reach the goal state.",
+        date: "Completed on 23 January, 2020",
+        status: "Complete",
+        imgsrc: "assets/reinforcement_learning.png",
+        source: "https://github.com/nisargdpatel/AI_Project_1",
+        images: String[0] = [
+            "assets/ai_search_algorithms_pics/1.PNG",
+            "assets/ai_search_algorithms_pics/2.PNG",
+            "assets/ai_search_algorithms_pics/3.PNG",
+        ]
+    },
+    {
+        id: 18,
+        name: "AI Robot Localization",
+        intro: "Implementation of Robot Localization with the HMM algorithm through series of sensing and motion updates.",
+        description: "The program uses HMM algorithm to figure out its location by performing filtering and prediction. For filtering/sensing, all open cells in the grid has equal proportion of robot's existence in that cell.  Based on that, robot looks through the whole matrix and senses each cell's surroundings given the 4-direction sequence. Then, the robot filters all the cells based off of conditional probabilities it calculated. For prediction, the robot checks each cell iteration's surrounding cells and finds all directional way to get to the current cell. It does consider the drifting cases and bounce back cases in terms of boundaries and blockades. Once the probability is found, the data is sent to the actual grid to be looked at.",
+        date: "Completed on 14 March, 2020",
+        status: "Complete",
+        imgsrc: "assets/reinforcement_learning.png",
+        source: "https://github.com/nisargdpatel/AI_Project_2",
+        images: String[0] = [
+            "assets/ai_robot_localization_pics/1.PNG",
+            "assets/ai_robot_localization_pics/2.PNG",
+            "assets/ai_robot_localization_pics/3.PNG",
+            "assets/ai_robot_localization_pics/4.PNG",
+            "assets/ai_robot_localization_pics/5.PNG",
+            "assets/ai_robot_localization_pics/6.PNG",
+            "assets/ai_robot_localization_pics/7.PNG",
+            "assets/ai_robot_localization_pics/8.PNG"
+        ]
     }
 ]
