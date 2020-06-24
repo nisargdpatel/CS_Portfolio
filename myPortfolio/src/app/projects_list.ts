@@ -33,15 +33,15 @@ export const PROJECTS: Project[] = [
         imgsrc: "assets/snake.png",
         source: "https://bitbucket.org/nisargp1999/snake_game/src/master/",
         images: String[0] = [
-            "assets/snake_pics/1.PNG", 
-            "assets/snake_pics/2.PNG", 
-            "assets/snake_pics/3.PNG", 
-            "assets/snake_pics/4.PNG", 
-            "assets/snake_pics/5.PNG", 
-            "assets/snake_pics/6.PNG", 
-            "assets/snake_pics/7.PNG", 
-            "assets/snake_pics/8.PNG", 
-            "assets/snake_pics/9.PNG", 
+            "assets/snake_pics/1.PNG",
+            "assets/snake_pics/2.PNG",
+            "assets/snake_pics/3.PNG",
+            "assets/snake_pics/4.PNG",
+            "assets/snake_pics/5.PNG",
+            "assets/snake_pics/6.PNG",
+            "assets/snake_pics/7.PNG",
+            "assets/snake_pics/8.PNG",
+            "assets/snake_pics/9.PNG",
             "assets/snake_pics/10.PNG"]
     },
     {
@@ -186,5 +186,128 @@ export const PROJECTS: Project[] = [
         imgsrc: "assets/uml_modeling.png",
         source: "https://bitbucket.org/nisargp1999/uml-modeling/src/master/",
         images: String[0] = []
+    },
+    {
+        id: 17,
+        name: "AI Search Algorithms",
+        intro: "Implementation of Depth First Search and A* Search algorithms for pathfinding in a Maze problem",
+        description: "This program simulates a maze where a robot is trying to reach a goal state. Considering a windy situation where there is a cost for moving in any specific direction. In this case, cost is 1 for moving northward, 2 for moving westward or eastward, and 3 for moving southward. Depth-First Search is implemented by storing the explored set of locations and performing operations on stack variables to be able to track next possible square to open. A* Search is implemented by using a heuristic function that tells the robot the total possible cost from starting position to the goal state. Using this knowledge, the robot follows the lowest cost path to reach the goal state.",
+        date: "Completed on 23 January, 2020",
+        status: "Complete",
+        imgsrc: "assets/reinforcement_learning.png",
+        source: "https://github.com/nisargdpatel/AI_Project_1",
+        images: String[0] = [
+            "assets/ai_search_algorithms_pics/1.PNG",
+            "assets/ai_search_algorithms_pics/2.PNG",
+            "assets/ai_search_algorithms_pics/3.PNG",
+        ]
+    },
+    {
+        id: 18,
+        name: "AI Robot Localization",
+        intro: "Implementation of Robot Localization with the HMM algorithm through series of sensing and motion updates.",
+        description: "The program uses HMM algorithm to figure out its location by performing filtering and prediction. For filtering/sensing, all open cells in the grid has equal proportion of robot's existence in that cell.  Based on that, robot looks through the whole matrix and senses each cell's surroundings given the 4-direction sequence. Then, the robot filters all the cells based off of conditional probabilities it calculated. For prediction, the robot checks each cell iteration's surrounding cells and finds all directional way to get to the current cell. It does consider the drifting cases and bounce back cases in terms of boundaries and blockades. Once the probability is found, the data is sent to the actual grid to be looked at.",
+        date: "Completed on 14 March, 2020",
+        status: "Complete",
+        imgsrc: "assets/reinforcement_learning.png",
+        source: "https://github.com/nisargdpatel/AI_Project_2",
+        images: String[0] = [
+            "assets/ai_robot_localization_pics/1.PNG",
+            "assets/ai_robot_localization_pics/2.PNG",
+            "assets/ai_robot_localization_pics/3.PNG",
+            "assets/ai_robot_localization_pics/4.PNG",
+            "assets/ai_robot_localization_pics/5.PNG",
+            "assets/ai_robot_localization_pics/6.PNG",
+            "assets/ai_robot_localization_pics/7.PNG",
+            "assets/ai_robot_localization_pics/8.PNG"
+        ]
+    },
+    {
+        id: 19,
+        name: "Two Dice Pig",
+        intro: "A multi-player jeopardy game of rolling dice to either add or lose points or get skipped.",
+        description: "There are two dice and two players competing against one another. First, the player rolls the two dice. If dice 1 rolls ONE and dice 2 rolls any other number, then the player's current turn is skipped and they lose all their turn points. If both dice rolls ONE, then the player's current turn is skipped and they lose all their overall points. If both dice rolls the same number, then the player is forced to roll again. The 1st player to score at least 50, wins the game.",
+        date: "Completed on 22 February, 2020",
+        status: "Complete",
+        imgsrc: "assets/two_dice_pig.PNG",
+        source: "https://github.com/nisargdpatel/TwoDicePig",
+        images: String[0] = [
+            "assets/two_dice_pig_pics/1.PNG",
+            "assets/two_dice_pig_pics/2.PNG",
+            "assets/two_dice_pig_pics/3.PNG",
+            "assets/two_dice_pig_pics/4.PNG",
+            "assets/two_dice_pig_pics/5.PNG",
+            "assets/two_dice_pig_pics/6.PNG",
+            "assets/two_dice_pig_pics/7.PNG",
+            "assets/two_dice_pig_pics/8.PNG",
+            "assets/two_dice_pig_pics/9.PNG"
+        ]
+    },
+    {
+        id: 20,
+        name: "Basic Convertor",
+        intro: "A simple convertor app that provides friendly UI to convert temperatures and distances",
+        description: "For this project, I used a menu system in the overflow menu, consisting of two options: Temperatures and Distances. The primary fragment that is displayed initially is for temperatures. On this fragment, the user is allowed to convert between Fahrenheit and Celsius. The distances fragment allows the user to convert distances in the Imperial and the Metric systems. So, it will allow conversions between kilometers and miles. In addition, when a user is in either screen, the data is managed so that if the user rotates the screen or leaves the app, that the input (and output that was generated) is restored to the screen.",
+        date: "Completed on 27 March, 2020",
+        status: "Complete",
+        imgsrc: "assets/basic_convertor.png",
+        source: "https://github.com/nisargdpatel/BasicConvertor",
+        images: String[0] = [
+            "assets/basic_convertor_pics/1.PNG",
+            "assets/basic_convertor_pics/2.PNG"
+        ]
+    },
+    {
+        id: 21,
+        name: "Basic Weather App",
+        intro: "A simple 5 day live weather forecasting app for 5 different cities",
+        description: "For the project I am using the OpenWeatherMap API to load weather data for a five day forecast. This API returns data to the Android device in a JSON format. The first screen (activity) allows user to select from 5 cities that are in a dropdown menu. Once they select the city, another activity will be loaded with an intent, including extra information about what city was selected. The second activity sends a request to the OpenWeatherMap API, and receives the JSON data about the weather for that city, and displays it.",
+        date: "Completed on 11 April, 2020",
+        status: "Complete",
+        imgsrc: "assets/weather.png",
+        source: "https://github.com/nisargdpatel/BasicWeatherApp",
+        images: String[0] = [
+            "assets/basic_weather_app_pics/1.PNG",
+            "assets/basic_weather_app_pics/2.PNG",
+            "assets/basic_weather_app_pics/3.PNG",
+            "assets/basic_weather_app_pics/4.PNG"
+        ]
+    },
+    {
+        id: 22,
+        name: "Dealership Inventory",
+        intro: "An app where customers can browse through available cars, which are managed by a car dealers.",
+        description: "Default user is the customer who can browse through the cars on sale at a specific dealership and look at specific car's details. A dealership user can login with the right credentials to be able to edit current car information or add a new car with details. The app demonstrates multi-threading that makes use of Realtime Database through Firebase Services. ",
+        date: "Completed on 20 April, 2020",
+        status: "Complete",
+        imgsrc: "assets/dealership.jpg",
+        source: "https://github.com/nisargdpatel/Dealership-Inventory",
+        images: String[0] = [
+            "assets/dealership_inventory_pics/1.PNG",
+            "assets/dealership_inventory_pics/2.PNG",
+            "assets/dealership_inventory_pics/3.PNG",
+            "assets/dealership_inventory_pics/4.PNG",
+            "assets/dealership_inventory_pics/5.PNG",
+            "assets/dealership_inventory_pics/6.PNG",
+            "assets/dealership_inventory_pics/7.PNG"
+        ]
+    },
+    {
+        id: 23,
+        name: "Post It Notes",
+        intro: "An app that keeps it simple to manage your multi-color notes.",
+        description: "In this app, you will save your time by adding and editing your notes. Includes straightforward and quick to use features like add, edit, and delete. Users can register and login to keep their data private. The app uses a Realtime Database and User Authentication through Firebase Services. ",
+        date: "Completed on 26 April, 2020",
+        status: "Complete",
+        imgsrc: "assets/post_it_notes.png",
+        source: "https://github.com/nisargdpatel/Post-It-Notes",
+        images: String[0] = [
+            "assets/post_it_notes_pics/1.PNG",
+            "assets/post_it_notes_pics/2.PNG",
+            "assets/post_it_notes_pics/3.PNG",
+            "assets/post_it_notes_pics/4.PNG",
+            "assets/post_it_notes_pics/5.PNG",
+            "assets/post_it_notes_pics/6.PNG"
+        ]
     }
 ]
