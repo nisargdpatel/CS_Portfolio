@@ -1,6 +1,6 @@
 body {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 2%;
+    margin-right: 2%;
     margin-top: 2%;
     margin-bottom: 2%;
     font-family: Rockwell, Arial, Helvetica, sans-serif;
@@ -8,7 +8,7 @@ body {
     padding: 2%;
     border-radius: 50px;
     color: white;
-    
+
 }
 .card, .m-3 {
     background-color: #24252A;
@@ -22,7 +22,7 @@ button {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    
+
 }
 
 button:hover {
@@ -31,10 +31,3 @@ button:hover {
 
 
 
-/* .invalid-feedback {
-    color: red;
-}
-
-.card-header {
-    font-size: large;
-} */

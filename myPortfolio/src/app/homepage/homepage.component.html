@@ -1,7 +1,17 @@
-<body>
+
+<html>
+  <body>
+    <br>
     <h2 style="text-align: center;">Certificates:</h2>
     <hr>
+    <br>
+    <div class="row">
+        <div *ngFor="let image of certificates">
+            <div class="column">
+                <img class="screenshots" src={{image}}>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
 
-    <hr>
-
-</body>
