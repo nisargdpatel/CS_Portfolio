@@ -18,6 +18,7 @@ import { environment } from '../environments/environment';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContactService } from './contact.service';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ContactService } from './contact.service';
     HomepageComponent,
     ProjectsComponent,
     ProjectDetailComponent,
-    ContactComponent
+    ContactComponent,
+    AboutMeComponent
   ],
   imports: [
     // HttpModule,

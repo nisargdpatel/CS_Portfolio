@@ -1,6 +1,6 @@
 body {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
     margin-top: 2%;
     margin-bottom: 2%;
     font-family: Rockwell, Arial, Helvetica, sans-serif;
@@ -27,13 +27,3 @@ button {
 button:hover {
     background-color: rgba(0, 126, 169, 0.8);
 }
-
-
-
-/* .invalid-feedback {
-    color: red;
-}
-
-.card-header {
-    font-size: large;
-} */
